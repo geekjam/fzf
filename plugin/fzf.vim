@@ -397,7 +397,7 @@ try
           let prefix = 'powershell -NoProfile -Command "get-content '.temps.input.'|out-file -encoding utf8 '.temps.input.'.fix" &&'
 		  let temps.input = temps.input.'.fix'
       endif
-      let prefix = (s:is_win ? 'type ' : 'cat ').fzf#shellescape(temps.input).'|'
+      let prefix = prefix.(s:is_win ? 'type ' : 'cat ').fzf#shellescape(temps.input).'|'
     else
       throw 'Invalid source type'
     endif
