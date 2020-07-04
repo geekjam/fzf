@@ -49,9 +49,9 @@ function download {
   }
   cd "$fzf_base\bin"
   if ("$version" -eq "alpha") {
-    $url="https://github.com.cnpmjs.org/junegunn/fzf-bin/releases/download/alpha/$file"
+    $url="https://github.wanvi.net/https:/github.com/junegunn/fzf-bin/releases/download/alpha/$file"
   } else {
-    $url="https://github.com.cnpmjs.org/junegunn/fzf-bin/releases/download/$version/$file"
+    $url="https://github.wanvi.net/https:/github.com/junegunn/fzf-bin/releases/download/$version/$file"
   }
   $temp=$env:TMP + "\fzf.zip"
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
