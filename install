@@ -155,8 +155,8 @@ download() {
 
   local url
   [[ "$version" =~ alpha ]] &&
-    url=https://github.com.cnpmjs.org/junegunn/fzf-bin/releases/download/alpha/${1} ||
-    url=https://github.com.cnpmjs.org/junegunn/fzf-bin/releases/download/$version/${1}
+    url=https://github.wanvi.net/https:/github.com/junegunn/fzf-bin/releases/download/alpha/${1} ||
+    url=https://github.wanvi.net/https:/github.com/junegunn/fzf-bin/releases/download/$version/${1}
   set -o pipefail
   if ! (try_curl $url || try_wget $url); then
     set +o pipefail
